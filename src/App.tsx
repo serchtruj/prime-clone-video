@@ -1,6 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Home} from './pages/index'
 
 function App() {
   return (
@@ -8,6 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Prime Video Clone</h1>
       </header>
+      <Home />
     </div>
   );
 }
