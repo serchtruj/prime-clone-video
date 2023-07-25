@@ -1,12 +1,12 @@
 export const NavTitles = [
     {
         name: "Inicio",
-        icon: "icon",
+        icon: "",
         subTitles : ["Todo", "Peliculas", "Series", "Deportes"]
     },
     {
         name: "Tienda",
-        icon: "icon",
+        icon: "",
         subTitles: ["Todo", "Alquilar o comprar","Canales"]
     },
     {
@@ -16,7 +16,7 @@ export const NavTitles = [
     },
     {
         name: "Categorias",
-        icon: "icon",
+        icon: "",
         subTitles: [
             {
                 name: "Generos",
@@ -42,7 +42,7 @@ export const NavTitles = [
     },
     {
         name: "Mi espacio",
-        icon: "icon",
+        icon: "",
         subTitles: ["Todo", "Mi lista", "Titulos comprados y aquilados"]
     }
 ]

@@ -1,0 +1,93 @@
+.navbar__container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    color: #ffffff;
+}
+
+.navbar__title__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.navbar__name {
+    padding-left: 20px;
+}
+
+.navbar__titles {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.navbar__titles:hover,
+.navbar__item:hover,
+.navbar__search__btn:hover,
+.avatar__container:hover {
+    background-color: #191e25;
+    color: #aaa;
+}
+
+.navbar__item:active {
+    border-bottom: 3px solid #ffffff;
+}
+
+.navbar__border__left,
+.navbar__border__right {
+    width: 20rem;
+    background-color: #ffffff;
+}
+
+.navbar__menu__container,
+.avatar__container,
+.navbar__item,
+.navbar__profile__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navbar__menu__container,
+.navbar__item,
+.navbar__profile__container {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.navbar__item {
+    border-bottom: 3px solid #000000;
+}
+
+.navbar__search__btn {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.avatar__image {
+    width: 38px;
+    border-radius: 50%;
+}
+
+.avatar__titles {
+    margin-left: 25px;
+}
+
+.avatar__image {
+    margin-right: 20px;
+    margin-left: 17px;
+}
