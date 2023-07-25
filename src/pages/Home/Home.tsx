@@ -9,7 +9,6 @@ import {
 function Home() {
     return (
         <div className="home__container">
-            <h1>Home Page</h1>
             <TopSlider />
             <ImageHoverSliderVertical />
             <ImageHoverSliderHorizontal />

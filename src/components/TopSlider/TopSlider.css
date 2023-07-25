@@ -1,0 +1,96 @@
+.top-slider-container {
+    height: 650px;
+    background-size: cover;
+    background-image: url("https://images5.alphacoders.com/116/thumb-1920-1160553.png");
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            /* 90% opaque black at the leftmost position */
+            rgba(0, 0, 0, 0.9) 40%,
+            /* 70% opaque black at 40% distance from the left */
+            rgba(0, 0, 0, 0.5) 60%,
+            /* 60% opaque black at 60% distance from the left */
+            rgba(0, 0, 0, 0.2) 100%
+            /* 40% opaque black at the rightmost position */
+        ),
+        url("https://images5.alphacoders.com/116/thumb-1920-1160553.png");
+    display: grid;
+    grid-template-columns: 70px 1fr 2fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.slider-info-container {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 330px 125px;
+}
+
+.slider-info-container h3 {
+    justify-self: flex-start;
+}
+
+.slider-info {
+    padding-left: 1rem;
+    color: white;
+    display: grid;
+    grid-template-rows: 75px 190px 60px;
+}
+
+.slider-include-prime {
+    display: flex;
+    align-items: center;
+}
+
+.slider-include-prime svg,
+h4 {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.slider-include-prime p {
+    background-color: grey;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 7px;
+}
+
+.slider-btns {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.slider-btns .fa-circle-play {
+    font-size: 6rem;
+    padding-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.slider-btns .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
+.slider-btns p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.slider-btns .fa-plus,
+.fa-circle-info {
+    font-size: 2rem;
+    margin-left: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider-btns .fa-plus:hover,
+.fa-circle-info:hover {
+    background-color: white;
+    color: grey;
+}
