@@ -42,7 +42,7 @@
 }
 
 .slider-include-prime svg,
-h4 {
+.slider-include-prime h4 {
     margin-right: 10px;
     font-size: 25px;
 }
@@ -80,7 +80,7 @@ h4 {
 }
 
 .slider-btns .fa-plus,
-.fa-circle-info {
+.slider-btns .fa-circle-info {
     font-size: 2rem;
     margin-left: 20px;
     background-color: grey;
@@ -90,7 +90,7 @@ h4 {
 }
 
 .slider-btns .fa-plus:hover,
-.fa-circle-info:hover {
+.slider-btns .fa-circle-info:hover {
     background-color: white;
     color: grey;
 }
