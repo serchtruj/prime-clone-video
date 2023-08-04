@@ -1,0 +1,93 @@
+.image-info-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.movie-info {
+    background-color: rgb(32, 26, 26);
+    width: 384px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.movie-info h4 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 2rem 0px 2rem;
+    text-align: initial;
+}
+
+.info-is-included,
+.info-year-age,
+.info-play {
+    display: flex;
+    align-items: center;
+}
+
+.info-play {
+    margin-top: 10px
+}
+
+.info-description {
+    margin-top: 3px;
+}
+
+.info-is-included .fa-circle-check {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.info-play .fa-circle-play {
+    font-size: 50px;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.info-play .fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
+.info-play p {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.info-play .fa-plus,
+.info-play .fa-circle-info {
+    font-size: 20px;
+    margin-left: 13px;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.info-play .fa-plus:hover,
+.info-play .fa-circle-info:hover {
+    background-color: white;
+    color: grey;
+}
+
+.info-year-age p {
+    background-color: grey;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 7px;
+}
+
+.title-movie {
+    font-size: 25px;
+}
+
+.info-year-age {
+    margin: 10px 10px 10px 0px;
+}
