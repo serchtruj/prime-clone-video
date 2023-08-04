@@ -4,6 +4,7 @@ import ImageHoverSliderVertical from "./ImageHover/ImageHoverSliderVertical";
 import TopSlider from "./TopSlider/TopSlider";
 import NavBar from './NavBar/NavBar'
 import IncludeInPrime from "./Include in Prime/IncludeInPirme";
+import PlayAndInfoDetails from "./Play and Info Details/PlayAndInfoDetails";
 
 export {
     BackgroundImageSlider,
@@ -11,5 +12,6 @@ export {
     ImageHoverSliderVertical,
     TopSlider,
     NavBar,
-    IncludeInPrime
+    IncludeInPrime,
+    PlayAndInfoDetails
 }
