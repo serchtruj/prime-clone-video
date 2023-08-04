@@ -2,6 +2,7 @@ import './TopSlider.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons';
 import { IconLookup } from '@fortawesome/fontawesome-common-types'
+import { IncludeInPrime } from '../index';
 
 const plusIcon: IconLookup = { prefix: 'fas', iconName: 'plus' }
 const infoIcon: IconLookup = { prefix: 'fas', iconName: 'info-circle' }
@@ -17,11 +18,7 @@ export default function TopSlider() {
                         alt="Venom"
                         width="250px"
                     />
-                    <div className='slider-include-prime'>
-                        <FontAwesomeIcon icon={faCheckCircle} />
-                        <h4>Se incluye con Prime </h4>
-                        <p>13+</p>
-                    </div>
+                    <IncludeInPrime size="25px" />
                 </div>
                 <div className="slider-btns">
                     <FontAwesomeIcon icon={faPlayCircle} />

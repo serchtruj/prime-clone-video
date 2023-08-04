@@ -36,25 +36,6 @@
     grid-template-rows: 75px 190px 60px;
 }
 
-.slider-include-prime {
-    display: flex;
-    align-items: center;
-}
-
-.slider-include-prime svg,
-.slider-include-prime h4 {
-    margin-right: 10px;
-    font-size: 25px;
-}
-
-.slider-include-prime p {
-    background-color: grey;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 2px 5px 2px 5px;
-    border-radius: 7px;
-}
-
 .slider-btns {
     display: flex;
     align-items: center;

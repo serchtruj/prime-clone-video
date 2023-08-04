@@ -4,6 +4,7 @@ import { faCheckCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons
 import { IconLookup } from '@fortawesome/fontawesome-common-types'
 import { useState } from 'react'
 import styled from 'styled-components';
+import { IncludeInPrime } from '../index'
 
 const plusIcon: IconLookup = { prefix: 'fas', iconName: 'plus' }
 const infoIcon: IconLookup = { prefix: 'fas', iconName: 'info-circle' }
@@ -44,10 +45,7 @@ export default function ImageHoverSliderVertical() {
                     onMouseLeave={() => setOpen(false)}
                 >
                     <div className='info-container'>
-                        <div className='info-is-included'>
-                            <FontAwesomeIcon icon={faCheckCircle} />
-                            <h4>Se incluye con Prime </h4>
-                        </div>
+                        <IncludeInPrime />
                         <div className="info-play">
                             <FontAwesomeIcon icon={faPlayCircle} />
                             <p>Reanudar T1 E19</p>
