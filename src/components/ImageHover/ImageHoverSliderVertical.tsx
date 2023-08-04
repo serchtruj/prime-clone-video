@@ -1,13 +1,7 @@
 import './ImageHoverSliderVertical.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons';
-import { IconLookup } from '@fortawesome/fontawesome-common-types'
 import { useState } from 'react'
 import styled from 'styled-components';
-import { IncludeInPrime } from '../index'
-
-const plusIcon: IconLookup = { prefix: 'fas', iconName: 'plus' }
-const infoIcon: IconLookup = { prefix: 'fas', iconName: 'info-circle' }
+import { IncludeInPrime, PlayAndInfoDetails } from '../index'
 
 const ImgHover = styled.div`
   overflow: hidden; /* Hide any content that overflows from the container */
@@ -17,9 +11,8 @@ const ImgHover = styled.div`
   transition: transform 0.3s ease;
 `;
 
-
 export default function ImageHoverSliderVertical() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
     const styles = {
         transform: "scaleX(1.2) scaleY(1.2)",
         zIndex: 3
@@ -46,12 +39,7 @@ export default function ImageHoverSliderVertical() {
                 >
                     <div className='info-container'>
                         <IncludeInPrime />
-                        <div className="info-play">
-                            <FontAwesomeIcon icon={faPlayCircle} />
-                            <p>Reanudar T1 E19</p>
-                            <FontAwesomeIcon icon={plusIcon} />
-                            <FontAwesomeIcon icon={infoIcon} />
-                        </div>
+                        <PlayAndInfoDetails />
                         <h4 className='title-movie'>Joven Sheldon: La serie</h4>
                         <div className='info-year-age'>
                             <h4>2018</h4>

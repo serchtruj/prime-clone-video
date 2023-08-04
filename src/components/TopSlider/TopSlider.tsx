@@ -1,11 +1,5 @@
 import './TopSlider.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faPlayCircle } from '@fortawesome/free-regular-svg-icons';
-import { IconLookup } from '@fortawesome/fontawesome-common-types'
-import { IncludeInPrime } from '../index';
-
-const plusIcon: IconLookup = { prefix: 'fas', iconName: 'plus' }
-const infoIcon: IconLookup = { prefix: 'fas', iconName: 'info-circle' }
+import { IncludeInPrime, PlayAndInfoDetails } from '../index';
 
 export default function TopSlider() {
     return (
@@ -20,12 +14,7 @@ export default function TopSlider() {
                     />
                     <IncludeInPrime size="25px" />
                 </div>
-                <div className="slider-btns">
-                    <FontAwesomeIcon icon={faPlayCircle} />
-                    <p>Reproducir</p>
-                    <FontAwesomeIcon icon={plusIcon} />
-                    <FontAwesomeIcon icon={infoIcon} />
-                </div>
+                <PlayAndInfoDetails playSize='100px' detailsInfoSize='40px' />
             </div>
         </div>
     )
