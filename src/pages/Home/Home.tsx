@@ -5,6 +5,27 @@ import {
     ImageHoverSliderVertical,
     BackgroundImageSlider
 } from '../../components';
+import styled from 'styled-components';
+
+const ImageHoverContainer = styled.div`
+  background-color: black;
+  color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-bottom: 30px;
+`;
+
+const Title = styled.h4`
+  font-size: 27px;
+  margin-bottom: 17px;
+  margin-top: 0pc;
+`
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 
 function Home() {
     return (
@@ -16,11 +37,12 @@ function Home() {
                     <ImageHoverSliderVertical />
                 </div>
             </div>
-
-            <div>
-                <h3>Amazon prime y exclusivas</h3>
-                <ImageHoverSliderHorizontal />
-            </div>
+            <ImageHoverContainer>
+                <Title>Amazon prime y exclusivas</Title>
+                <ImageWrapper>
+                    <ImageHoverSliderHorizontal />
+                </ImageWrapper>
+            </ImageHoverContainer>
             <BackgroundImageSlider />
         </div>
     );
