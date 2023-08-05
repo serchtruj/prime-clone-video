@@ -5,6 +5,7 @@ import TopSlider from "./TopSlider/TopSlider";
 import NavBar from './NavBar/NavBar'
 import IncludeInPrime from "./Include in Prime/IncludeInPirme";
 import PlayAndInfoDetails from "./Play and Info Details/PlayAndInfoDetails";
+import { InfoButton } from './Buttons'
 
 export {
     BackgroundImageSlider,
@@ -13,5 +14,6 @@ export {
     TopSlider,
     NavBar,
     IncludeInPrime,
-    PlayAndInfoDetails
+    PlayAndInfoDetails,
+    InfoButton
 }
