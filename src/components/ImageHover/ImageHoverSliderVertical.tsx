@@ -12,7 +12,7 @@ const ImgHover = styled.div`
 `;
 
 export default function ImageHoverSliderVertical() {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
     const styles = {
         transform: "scaleX(1.2) scaleY(1.2)",
         zIndex: 3
