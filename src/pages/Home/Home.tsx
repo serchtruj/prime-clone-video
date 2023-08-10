@@ -3,7 +3,8 @@ import {
     TopSlider,
     ImageHoverSliderHorizontal,
     ImageHoverSliderVertical,
-    BackgroundImageSlider
+    BackgroundImageSlider,
+    Slider
 } from '../../components';
 import styled from 'styled-components';
 
@@ -30,7 +31,7 @@ const ImageWrapper = styled.div`
 function Home() {
     return (
         <div className="home__container">
-            <TopSlider />
+            <TopSlider url="https://images5.alphacoders.com/116/thumb-1920-1160553.png" />
             <div className="slider-images-container">
                 <h3>Seguir viendo</h3>
                 <div className="slider-images-hover">
@@ -44,6 +45,7 @@ function Home() {
                 </ImageWrapper>
             </ImageHoverContainer>
             <BackgroundImageSlider />
+            <Slider />
         </div>
     );
 }

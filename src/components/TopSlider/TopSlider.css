@@ -1,7 +1,7 @@
 .top-slider-container {
     height: 650px;
     background-size: cover;
-    background-image: url("https://images5.alphacoders.com/116/thumb-1920-1160553.png");
+    min-width: 100%;
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 1) 0%,
             /* 90% opaque black at the leftmost position */
@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 70px 1fr 2fr;
     grid-template-rows: 100px 1fr;
+    position: relative;
 }
 
 .slider-info-container {
@@ -23,6 +24,7 @@
     grid-row-start: 2;
     display: grid;
     grid-template-rows: 330px 125px;
+    position: relative;
 }
 
 .slider-info-container h3 {
@@ -34,4 +36,7 @@
     color: white;
     display: grid;
     grid-template-rows: 75px 190px 60px;
+    position: relative;
+    /* Add this to create a new stacking context */
+    z-index: 1;
 }
