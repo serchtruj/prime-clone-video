@@ -8,6 +8,18 @@ import {
 } from '../../components';
 import styled from 'styled-components';
 
+const imgTransformers = "https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2023/06/Transformers-El-despertar-de-las-bestias-5.jpg"
+const imgJhonWick = "https://images3.alphacoders.com/103/1033561.jpg"
+const imgMegalodon = "https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_TheMeg_CleanSlate/d09c26da-fe91-4e04-aa47-3d0247006f41._UR3840,1440_SX1440_FMjpg_.jpeg"
+const imgBarbie = "https://media.vogue.mx/photos/64a85a036f69e15540706299/master/w_4410,h_2103,c_limit/rev-1-BARBIE-TP-0002_High_Res_JPEG.jpeg"
+
+const AllImages = [
+    imgTransformers,
+    imgBarbie,
+    imgJhonWick,
+    imgMegalodon
+]
+
 const ImageHoverContainer = styled.div`
   background-color: black;
   color: #ffffff;
@@ -45,7 +57,9 @@ function Home() {
                 </ImageWrapper>
             </ImageHoverContainer>
             <BackgroundImageSlider />
-            <Slider />
+            <Slider >
+                {AllImages.map(item => <TopSlider url={item} key={item} />)}
+            </Slider>
         </div>
     );
 }
