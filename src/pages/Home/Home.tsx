@@ -7,7 +7,7 @@ import {
     Slider
 } from '../../components';
 import styled from 'styled-components';
-import axiosTMDB from '../../utils/axiosTMDB';
+import createTMDBInstance from '../../utils/axiosTMDB';
 
 const imgTransformers = "https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2023/06/Transformers-El-despertar-de-las-bestias-5.jpg"
 const imgJhonWick = "https://images3.alphacoders.com/103/1033561.jpg"
@@ -40,9 +40,18 @@ const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
 `
+const tmdbApi = createTMDBInstance();
 
 function Home() {
-    axiosTMDB.get().then((res: any) => console.log(res.json()))
+    tmdbApi.get('/movie/popular')
+    .then(response => {
+      // Handle the response data
+      console.log(response.data);
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
     return (
         <div className="home__container">
             <TopSlider url="https://images5.alphacoders.com/116/thumb-1920-1160553.png" />
