@@ -1,7 +1,7 @@
 import './NavBar.css';
 import { NavBarMenu } from './NavBarMenu'
 import { AvatarProfile } from './AvatarProfile'
-import { NavTitles } from '../../Utils/NavTitles';
+import { NavTitles } from '../../utils/NavTitles';
 
 function NavBar() {
   /*
