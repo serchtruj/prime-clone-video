@@ -41,6 +41,8 @@ const ImageWrapper = styled.div`
 `
 
 function Home() {
+    console.log("url working", process.env.REACT_APP_API_URL)
+    console.log("wtf")
     return (
         <div className="home__container">
             <TopSlider url="https://images5.alphacoders.com/116/thumb-1920-1160553.png" />
